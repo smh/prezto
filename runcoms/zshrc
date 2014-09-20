@@ -14,3 +14,7 @@ fi
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 eval "$(direnv hook zsh)"
+
+source ~/src/base16-shell/base16-default.dark.sh
+
+export KEYTIMEOUT=1
