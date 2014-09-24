@@ -13,7 +13,9 @@ fi
 # Customize to your needs...
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
-eval "$(direnv hook zsh)"
+if type direnv > /dev/null; then
+  eval "$(direnv hook zsh)"
+fi
 
 source ~/src/base16-shell/base16-default.dark.sh
 
