@@ -21,6 +21,7 @@ source ~/src/base16-shell/base16-default.dark.sh
 
 export KEYTIMEOUT=1
 
+bindkey "^R" history-incremental-search-backward
 
 if [[ `uname` == "CYGWIN_NT-6.1" ]]; then
   export PATH=$PATH:$HOME/bin
@@ -28,3 +29,4 @@ if [[ `uname` == "CYGWIN_NT-6.1" ]]; then
   export https_proxy=http://wpad:8080
   git-info off
 fi
+
