@@ -30,3 +30,4 @@ if [[ `uname` == "CYGWIN_NT-6.1" ]]; then
   git-info off
 fi
 
+alias dm=docker-machine
